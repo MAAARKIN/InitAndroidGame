@@ -22,10 +22,8 @@ public class SimpleMove : MonoBehaviour {
 		if (clock <= timeMoving) {
 
 			if (initLeft) {
-				transform.eulerAngles = new Vector3(0, 0, 0);
 				move = Vector3.left;
 			} else {
-				transform.eulerAngles = new Vector3(0, 180, 0);
 				move = Vector3.right;
 			}
 //			clock++;

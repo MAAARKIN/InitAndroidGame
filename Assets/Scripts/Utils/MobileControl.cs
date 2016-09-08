@@ -12,12 +12,15 @@ public class MobileControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		player = GameObject.Find("Player").GetComponent<Player>();
 		playerClass = FindObjectOfType<Player>();
-//		jumpClass = FindObjectOfType<Jump>();
 		goToLeft = false;
 		goToRight = false;
 		canJump = false;
+
+		#if UNITY_STANDALONE
+			this.gameObject.SetActive(false);
+		#endif
+
 	}
 	
 	// Update is called once per frame

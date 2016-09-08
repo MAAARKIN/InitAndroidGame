@@ -20,7 +20,7 @@ public class Deadline : MonoBehaviour {
 
 			if (hit && hit.transform.gameObject.name.Equals("Player")) {
 				Debug.Log("Player Morreu");
-				player.morreu();
+				player.PerdeuVida();
 			}
 		}
 	}

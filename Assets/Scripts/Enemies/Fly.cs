@@ -3,14 +3,10 @@ using System.Collections;
 
 public class Fly : MonoBehaviour {
 
-	public Transform knockStartArea;
-	public Transform knockEndArea;
-//	private SimpleMove simpleMove;
 	private Animator animatorController;
 
 	// Use this for initialization
 	void Start () {
-//		this.simpleMove = GetComponent<SimpleMove>();
 		this.animatorController = GetComponent<Animator>();
 	}
 	
@@ -28,13 +24,11 @@ public class Fly : MonoBehaviour {
 //		}
 	}
 
-	IEnumerator WaitToDead() {
-		yield return new WaitForSeconds(2.0F);
-	}
-
 	void dying() {
 //		StartCoroutine(WaitToDead());
 		this.animatorController.SetTrigger("dead");
 //		Destroy(gameObject);
 	}
+
+
 }

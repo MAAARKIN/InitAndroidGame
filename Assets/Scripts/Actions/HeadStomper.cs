@@ -3,11 +3,11 @@ using System.Collections;
 
 public class HeadStomper : MonoBehaviour {
 
-	private Rigidbody2D rb2d;
+//	private Rigidbody2D rb2d;
 
 	// Use this for initialization
 	void Start () {
-		rb2d = transform.parent.GetComponent<Rigidbody2D>();
+//		rb2d = transform.parent.GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
